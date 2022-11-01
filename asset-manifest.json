@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-homeworks/static/css/main.03041194.css",
+    "main.js": "/react-homeworks/static/js/main.cde27650.js",
+    "static/js/787.66cb4309.chunk.js": "/react-homeworks/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/react-homeworks/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/react-homeworks/index.html",
+    "main.03041194.css.map": "/react-homeworks/static/css/main.03041194.css.map",
+    "main.cde27650.js.map": "/react-homeworks/static/js/main.cde27650.js.map",
+    "787.66cb4309.chunk.js.map": "/react-homeworks/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03041194.css",
+    "static/js/main.cde27650.js"
+  ]
+}
