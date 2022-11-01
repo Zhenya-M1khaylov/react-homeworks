@@ -14,29 +14,33 @@ import avatar from './avatar.png'
 * */
 
 // нужно создать правильный тип вместо any
-export type MessageType = any
+export type MessageType = {
+    id: number
+    user: {avatar: string, name: string}
+    message: {text: string, time: string}
+}
 
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Zhenya',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', // можно менять
+        text: 'Howdy!', // можно менять
+        time: '17:15', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        name: 'Pablo', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        text: 'I am fine, thanks!', // можно менять
+        time: '17:16', // можно менять
     },
 }
 
@@ -47,8 +51,8 @@ const HW1 = () => {
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
-                    <Message message={message0} />
-                    <FriendMessage message={friendMessage0} />
+                    <Message message={message0} avatar={avatar} text={message0.message.text} name={message0.user.name} time={message0.message.time}/>
+                    <FriendMessage message={friendMessage0} avatar={avatar} text={friendMessage0.message.text} name={friendMessage0.user.name} time={friendMessage0.message.time}/>
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}

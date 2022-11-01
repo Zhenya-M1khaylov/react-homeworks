@@ -2,7 +2,13 @@ import React from 'react'
 import s from './Message.module.css'
 
 // нужно создать правильный тип вместо any
-export type MessagePropsType = any
+export type MessagePropsType = {
+    message: { id: number }
+    avatar: string
+    name: string
+    text: string
+    time: string
+}
 
 // нужно отобразить приходящие данные
 const Message = (props: MessagePropsType) => {
@@ -12,25 +18,26 @@ const Message = (props: MessagePropsType) => {
                 <img
                     id={'hw1-avatar-' + props.message.id}
                     // создаёт студент
-
+                    src={props.avatar}
+                    alt="avatar"
                     //
                 />
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
                         {/*создаёт студент*/}
-
+                        {props.name}
                         {/**/}
                     </div>
                     <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
                         {/*создаёт студент*/}
-
+                        {props.text}
                         {/**/}
                     </pre>
                 </div>
             </div>
             <div id={'hw1-time-' + props.message.id} className={s.time}>
                 {/*создаёт студент*/}
-
+                {props.time}
                 {/**/}
             </div>
         </div>
