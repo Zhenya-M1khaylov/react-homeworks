@@ -14,10 +14,20 @@ import avatar from './avatar.png'
 * */
 
 // нужно создать правильный тип вместо any
+export type UserType = {
+    avatar: string
+    name: string
+}
+
+export type TMessage = {
+    text: string
+    time: string
+}
+
 export type MessageType = {
     id: number
-    user: {avatar: string, name: string}
-    message: {text: string, time: string}
+    user: UserType
+    message: TMessage
 }
 
 // структуру объекта не менять
@@ -51,8 +61,8 @@ const HW1 = () => {
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
-                    <Message message={message0} avatar={avatar} text={message0.message.text} name={message0.user.name} time={message0.message.time}/>
-                    <FriendMessage message={friendMessage0} avatar={avatar} text={friendMessage0.message.text} name={friendMessage0.user.name} time={friendMessage0.message.time}/>
+                    <Message message={message0}/>
+                    <FriendMessage message={friendMessage0}/>
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
