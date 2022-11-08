@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-homeworks/static/css/main.c586b4d4.css",
-    "main.js": "/react-homeworks/static/js/main.46247713.js",
+    "main.css": "/react-homeworks/static/css/main.fdb833df.css",
+    "main.js": "/react-homeworks/static/js/main.188e76d6.js",
     "static/js/787.66cb4309.chunk.js": "/react-homeworks/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/react-homeworks/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/react-homeworks/index.html",
-    "main.c586b4d4.css.map": "/react-homeworks/static/css/main.c586b4d4.css.map",
-    "main.46247713.js.map": "/react-homeworks/static/js/main.46247713.js.map",
+    "main.fdb833df.css.map": "/react-homeworks/static/css/main.fdb833df.css.map",
+    "main.188e76d6.js.map": "/react-homeworks/static/js/main.188e76d6.js.map",
     "787.66cb4309.chunk.js.map": "/react-homeworks/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c586b4d4.css",
-    "static/js/main.46247713.js"
+    "static/css/main.fdb833df.css",
+    "static/js/main.188e76d6.js"
   ]
 }
