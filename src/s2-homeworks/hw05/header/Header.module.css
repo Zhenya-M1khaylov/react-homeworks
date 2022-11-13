@@ -1,13 +1,15 @@
 .burgerMenuIcon {
     width: 26px;
     height: 26px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     max-width: calc(100% - 140px);
     height: 60px;
 }
