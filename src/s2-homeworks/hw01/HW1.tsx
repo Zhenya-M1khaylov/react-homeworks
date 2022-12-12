@@ -35,10 +35,10 @@ export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Zhenya',  // можно менять
+        name: 'Ivan',  // можно менять
     },
     message: {
-        text: 'Howdy!', // можно менять
+        text: 'Howdy man!', // можно менять
         time: '17:15', // можно менять
     },
 }
@@ -46,7 +46,7 @@ export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Pablo', // можно менять
+        name: 'Ivan', // можно менять
     },
     message: {
         text: 'I am fine, thanks!', // можно менять
