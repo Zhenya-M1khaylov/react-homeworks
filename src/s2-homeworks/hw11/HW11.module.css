@@ -1,10 +1,10 @@
-.container .wrapper:first-child {
-    width: 202px;
-}
+/*.container .wrapper:first-child {*/
+/*    width: 202px;*/
+/*}*/
+
 
 
 .wrapper {
-    display: flex;
     align-items: center;
     gap: 20px;
     width: 250px;
