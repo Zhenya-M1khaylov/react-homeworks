@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/react-homeworks/static/css/main.a206589c.css",
-    "main.js": "/react-homeworks/static/js/main.28d66775.js",
+    "main.css": "/react-homeworks/static/css/main.009688b5.css",
+    "main.js": "/react-homeworks/static/js/main.e9af34ff.js",
     "static/js/787.66cb4309.chunk.js": "/react-homeworks/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/react-homeworks/static/media/avatar.d947cb9d0d13765666b6.png",
+    "static/media/200.svg": "/react-homeworks/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
+    "static/media/error.svg": "/react-homeworks/static/media/error.5a3135f381b00b53044eff200e725391.svg",
+    "static/media/500.svg": "/react-homeworks/static/media/500.adbc5f265f6f3c1fb9c5633ffe365afa.svg",
+    "static/media/400.svg": "/react-homeworks/static/media/400.8baa1b795048b6fa13ff8d30800aa1b1.svg",
     "static/media/404.svg": "/react-homeworks/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/loader.svg": "/react-homeworks/static/media/loader.2d23f9fd1718b818f811.svg",
     "static/media/closeOutline.svg": "/react-homeworks/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
@@ -12,12 +16,12 @@
     "static/media/checked.svg": "/react-homeworks/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/react-homeworks/index.html",
     "static/media/burger.svg": "/react-homeworks/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.a206589c.css.map": "/react-homeworks/static/css/main.a206589c.css.map",
-    "main.28d66775.js.map": "/react-homeworks/static/js/main.28d66775.js.map",
+    "main.009688b5.css.map": "/react-homeworks/static/css/main.009688b5.css.map",
+    "main.e9af34ff.js.map": "/react-homeworks/static/js/main.e9af34ff.js.map",
     "787.66cb4309.chunk.js.map": "/react-homeworks/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a206589c.css",
-    "static/js/main.28d66775.js"
+    "static/css/main.009688b5.css",
+    "static/js/main.e9af34ff.js"
   ]
 }
