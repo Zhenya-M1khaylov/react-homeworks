@@ -1,12 +1,12 @@
-import React, {useState} from 'react'
-import s2 from '../../s1-main/App.module.css'
-import s from './HW13.module.css'
-import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
-import axios from 'axios'
-import success200 from './images/200.svg'
-import error400 from './images/400.svg'
-import error500 from './images/500.svg'
-import errorUnknown from './images/error.svg'
+import React, {useState} from 'react';
+import s2 from '../../s1-main/App.module.css';
+import s from './HW13.module.css';
+import SuperButton from '../hw04/common/c2-SuperButton/SuperButton';
+import axios from 'axios';
+import success200 from './images/200.svg';
+import error400 from './images/400.svg';
+import error500 from './images/500.svg';
+import errorUnknown from './images/error.svg';
 
 /*
 * 1 - дописать функцию send
@@ -15,31 +15,29 @@ import errorUnknown from './images/error.svg'
 * */
 
 const HW13 = () => {
-    const [code, setCode] = useState('')
-    const [text, setText] = useState('')
-    const [info, setInfo] = useState('')
-    const [image, setImage] = useState('')
-    const [isDisabledButton, setIsDisabledButton] = useState(false)
-
+    const [code, setCode] = useState('');
+    const [text, setText] = useState('');
+    const [info, setInfo] = useState('');
+    const [image, setImage] = useState('');
+    const [isDisableBtn, setIsDisableBtn] = useState(false);
     const send = (x?: boolean | null) => () => {
         const url =
             x === null
                 ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
-                : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
+                : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test';
 
-        setCode('')
-        setImage('')
-        setText('')
-        setInfo('...loading')
-        setIsDisabledButton(true)
-
+        setCode('');
+        setImage('');
+        setText('');
+        setInfo('...loading');
+        setIsDisableBtn(true);
         axios
             .post(url, {success: x})
             .then((res) => {
-                setCode('Код 200!')
-                setImage(success200)
-                setInfo('код 200 - обычно означает что все ок')
-                setText('...все ок)')
+                setCode('Код 200!');
+                setImage(success200);
+                setInfo('код 200 - обычно означает что скорее всего всё ок)');
+                setText('...всё ок)');
                 // дописать
 
             })
@@ -66,9 +64,10 @@ const HW13 = () => {
                 // дописать
             })
             .finally(() => {
-                setIsDisabledButton(false)
-            })
-    }
+                setIsDisableBtn(false);
+            });
+
+    };
 
     return (
         <div id={'hw13'}>
@@ -80,7 +79,7 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
-                        disabled={isDisabledButton}
+                        disabled={isDisableBtn}
                         // дописать
 
                     >
@@ -90,7 +89,7 @@ const HW13 = () => {
                         id={'hw13-send-false'}
                         onClick={send(false)}
                         xType={'secondary'}
-                        disabled={isDisabledButton}
+                        disabled={isDisableBtn}
                         // дописать
 
                     >
@@ -100,7 +99,7 @@ const HW13 = () => {
                         id={'hw13-send-undefined'}
                         onClick={send(undefined)}
                         xType={'secondary'}
-                        disabled={isDisabledButton}
+                        disabled={isDisableBtn}
                         // дописать
 
                     >
@@ -110,7 +109,7 @@ const HW13 = () => {
                         id={'hw13-send-null'}
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
-                        disabled={isDisabledButton}
+                        disabled={isDisableBtn}
                         // дописать
 
                     >
@@ -137,7 +136,7 @@ const HW13 = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default HW13
+export default HW13;
